@@ -18,6 +18,10 @@ if (require.main === module) {
 
   console.log("Expecting: 'ybabtac'");
   console.log("=>", reverseString("catbaby"));
+
+
+  console.log("Expecting: 'akulaw'");
+  console.log("=>", reverseString("waluka"));
 }
 
 module.exports = reverseString;
