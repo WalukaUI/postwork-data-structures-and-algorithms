@@ -1,5 +1,6 @@
 function fibonacci(num) {
   // type your code here
+  //
 }
 
 if (require.main === module) {
