@@ -1,6 +1,9 @@
 function fibonacci(num) {
   // type your code here
-  //
+ for(let i=0;i>num;i++){
+   console.log(i);
+ }
+  
 }
 
 if (require.main === module) {
