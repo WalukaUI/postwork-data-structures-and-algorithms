@@ -1,5 +1,20 @@
 def fibonacci(num)
   # type your code in here
+
+  $a=0
+  $b=1
+  $result
+
+  return $a if num === 0
+  return $b if num === 1
+  
+  (num-1).times do
+    $result=$a+$b
+    $a=$b
+    $b=$result
+  end
+  
+  $result
 end
 
 if __FILE__ == $PROGRAM_NAME
