@@ -12,4 +12,8 @@ RSpec.describe '#fibonacci' do
   it "outputs the correct number at index 28" do
     expect(fibonacci(28)).to eq(fibo[28])
   end
+
+   it "index 100 result should be" do
+     expect(fibonacci(100)).to eq(354224848179261915075)
+   end
 end
