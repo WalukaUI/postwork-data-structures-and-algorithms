@@ -1,9 +1,18 @@
 function fibonacci(num) {
   // type your code here
- for(let i=0;i>num;i++){
-   console.log(i);
- }
-  
+
+  if (num < 1) return 0;
+
+  var a, b, result;
+  a = 0;
+  b = 1;
+  result = b;
+  for (let i = 1; i < num; i++) {
+    result = a + b;
+    a = b;
+    b = result;
+  }
+  return result;
 }
 
 if (require.main === module) {
