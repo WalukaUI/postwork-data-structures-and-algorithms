@@ -16,4 +16,8 @@ RSpec.describe '#find_shortest_string' do
   it 'returns the empty string' do
     expect(find_shortest_string(['things', 'crabapple', '', 'stuff'])).to eq('')
   end
+
+  it 'returns the shortest string when there is only one' do
+    expect(find_shortest_string(['fl', 'juniper', 'lily', 'dadelion'])).to eq('fl')
+  end
 end

@@ -29,6 +29,11 @@ if (require.main === module) {
 
   console.log("Expecting: 55");
   console.log("=>", fibonacci(10));
+
+  console.log("");
+
+  console.log("Expecting: 354224848179262000000");
+  console.log("=>", fibonacci(100));
 }
 
 module.exports = fibonacci;

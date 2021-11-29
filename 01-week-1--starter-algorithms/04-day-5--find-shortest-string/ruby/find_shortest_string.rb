@@ -1,5 +1,13 @@
 def find_shortest_string(arr)
   # type your code in here
+  newA= arr[0]
+  arr.each do |string|
+    if string.size < newA.length
+      newA=string
+    end
+    newA
+  end
+  newA
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -17,6 +25,9 @@ if __FILE__ == $PROGRAM_NAME
   puts "=>", find_shortest_string(['flower', 'juniper', 'lily', 'dadelion'])
 
   # Don't forget to add your own!
+
+  puts "Expecting: 'fl'"
+  puts "=>", find_shortest_string(['fl', 'juniper', 'lily', 'dadelion'])
 
   # BENCHMARK HERE
 end
