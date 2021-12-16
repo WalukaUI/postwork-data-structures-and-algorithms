@@ -1,5 +1,13 @@
 function recursiveSearch(arr, target) {
+  // let aa = arr.find((a) => a === target);
+  // if (aa) return true;
+
+  // return false;
   // type your code here
+  if (arr.length === 0) return false;
+  if (arr[0] === target) return true;
+
+  return recursiveSearch(arr.slice(1), target);
 }
 
 if (require.main === module) {
